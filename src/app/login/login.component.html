@@ -1,0 +1,30 @@
+<div class="text-center">
+    <h4>Basic mat-select</h4>
+    <mat-form-field appearance="fill">
+        <mat-label>Favorite food</mat-label>
+        <mat-select (selectionChange)="onSelectedDropdown($event)">
+            <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="text-center">
+    <select name="users">
+        <option value="">--Select User--</option>
+        <option *ngFor="let option of users" value="{{option.value}}">{{option.viewValue}}</option>
+    </select>
+</div>
+
+<div class="text-center">
+    <h4>Products from API</h4>
+    <mat-form-field appearance="fill">
+        <mat-label>Favorite food</mat-label>
+        <mat-select (selectionChange)="onSelectedDropdown($event)">
+            <mat-option *ngFor="let name of names" [value]="name.name">
+                {{name.name}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

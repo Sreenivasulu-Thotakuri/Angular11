@@ -1,0 +1,60 @@
+<form class="myForm" [formGroup]="myForm">
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-label><p style="margin-left: 200px;font-size: 25px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;color:hotpink;   ">Sign-Up Form </p></mat-label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>First name</mat-label>
+                    <input matInput formControlName="fName">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput formControlName="lName">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input type="email" matInput formControlName="email" placeholder="Ex. sreenivas@example.com">
+                  </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-radio-group aria-label="Select an option" formControlName="gender" >
+                    <mat-label>Gender: </mat-label>
+                    <mat-radio-button value="Male">Male</mat-radio-button>
+                    <mat-radio-button value="Female">Female</mat-radio-button>
+                  </mat-radio-group>
+            </td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>
+                <mat-form-field appearance="fill">
+                    <mat-label>Qualification</mat-label>
+                    <select matNativeControl formControlName="qualification" >
+                        <option value="">Select your Qualification</option>
+                      <option value="Btech">Btech</option>
+                      <option value="MCA">MCA</option>
+                      <option value="MBA">MBA</option>
+                      <option value="Mtech">Mtech</option>
+                    </select>
+                  </mat-form-field>
+            </td>
+        </tr>
+    </table>
+    <p style="padding-left: 180px;"><button mat-stroked-button color="primary" (click)="goToSignupDisplay()">Click here to Register</button></p>
+    <!-- <app-signupdisplay [fname]="currentItem"></app-signupdisplay> -->
+
+</form>

@@ -1,0 +1,24 @@
+.toolbar {
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    height          : 60px;
+    display         : flex;
+    align-items     : center;
+    background-color: #1976d2;
+    color           : white;
+    font-weight     : 600;
+}
+
+span {
+    font-size  : 30px;
+    font-family: cursive;
+}
+
+.p30 {
+ padding: 30px;   
+}
+
+.pt25 {
+    padding-top: 25px;
+}
